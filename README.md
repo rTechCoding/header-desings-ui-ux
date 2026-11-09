@@ -1,7 +1,7 @@
 # rTechCoding Animated Background Headers Generator
 
 > **Animated Background Headers - Generate animated background headers for any website.**  
-> Inspired by Stripe, replacing and upgrading `finisher.co/lab/header` with the **rTechCoding** brand engine.
+> Inspired by Stripe, replacing and upgrading `rtechcoding/header` with the **rTechCoding** brand engine.
 
 ---
 
