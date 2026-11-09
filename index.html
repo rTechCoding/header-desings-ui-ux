@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Animated Background Headers - Generate animated background headers for any website</title>
+  <meta name="description" content="Generate animated background headers for any website. Interactive tool by rTechCoding replacing Finisher Header.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%2300E5FF'/><stop offset='50%25' stop-color='%232878FF'/><stop offset='100%25' stop-color='%23B323FF'/></linearGradient></defs><rect width='100' height='100' rx='24' fill='%23050918'/><path d='M25 15 C18 15 12 21 12 30 L12 70 C12 78 18 84 26 84 C34 84 40 78 40 70 L40 56 C40 48 48 40 58 40 C68 40 76 48 76 58 L76 72 C76 79 82 84 89 84 C96 84 100 79 100 72 L100 54 C100 32 82 15 60 15 Z' fill='url(%23g)' transform='scale(0.85) translate(8,8)'/></svg>">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. The Live Animated Header (Hero Section)
+       ========================================================================= -->
+  <div class="header finisher-header rtechcoding-header" id="mainHeader">
+    
+    <!-- Top Nav -->
+    <header class="top-nav center wide">
+      <a href="#" class="brand-link" title="rTechCoding Header Generator">
+        <svg class="brand-logo-svg" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#00E5FF"/>
+              <stop offset="45%" stop-color="#2878FF"/>
+              <stop offset="100%" stop-color="#B323FF"/>
+            </linearGradient>
+          </defs>
+          <rect width="38" height="38" rx="10" fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+          <path d="M10 6 C7 6 5 8 5 11 L5 27 C5 30 7 32 10 32 C13 32 15 30 15 27 L15 22 C15 19 18 16 22 16 C26 16 29 19 29 23 L29 28 C29 30 31 32 33 32 C35 32 37 30 37 28 L37 21 C37 13 30 6 22 6 Z" fill="url(#brandGrad)"/>
+          <circle cx="23" cy="24" r="3" fill="#00E5FF"/>
+        </svg>
+        <div class="brand-text-wrap">
+          <span class="brand-name">rTechCoding</span>
+          <span class="brand-tag">Lab</span>
+        </div>
+      </a>
+
+      <div class="fake-menu">
+        <a href="javascript:void(0)" class="fake-menu-item" id="topNavHowToUse">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          How to use
+        </a>
+        <a href="demo-presets.html" class="fake-menu-item">Presets Gallery</a>
+        <a href="demo-minimal.html" class="fake-menu-item">Minimal Demo</a>
+        <span class="fake-menu-item">
+          <button class="btn-top-cta" id="topNavGetCode">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            Get Code
+          </button>
+        </span>
+      </div>
+    </header>
+
+    <!-- Intro Text -->
+    <div class="intro center narrow">
+      <div class="intro-pill">
+        <span class="sparkle-icon">✨</span>
+        <span>Interactive Header Engine by rTechCoding</span>
+      </div>
+      <h1>Animated Background Headers</h1>
+      <h3>Generate animated background headers for any website</h3>
+      <div class="signature">
+        crafted with precision by <a href="https://rtechcoding.com" target="_blank" rel="noopener">rTechCoding</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- =========================================================================
+       2. Configuration Controls Studio (High Aesthetics Upgrade)
+       ========================================================================= -->
+  <main class="content center wide">
+    
+    <!-- Studio Header & Action Bar -->
+    <div class="studio-header-bar">
+      <div class="studio-title-block">
+        <div class="studio-badge">
+          <span class="pulse-dot"></span>
+          <span>STUDIO CONTROLLER</span>
+        </div>
+        <h2 class="studio-heading">Customize Background Properties</h2>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="buttons">
+        <button class="btn-action btn-random" id="btnRandomize" title="Randomize Configuration">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M16 3h5v5M4 20L21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg>
+          <span>Randomize</span>
+        </button>
+        <button class="btn-action" id="btnReset" title="Reset to Defaults">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+          <span>Reset</span>
+        </button>
+        <button class="btn-action btn-how-to-use" id="btnHowToUse" title="Open Implementation Guide">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          <span>How to use</span>
+        </button>
+        <button class="btn-action btn-code btn-glow" id="btnGetCode" title="Export Ready Code">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          <span>Get Code</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Presets Palette Bar with Visual Color Dots -->
+    <div class="presets-section">
+      <span class="presets-label">Preset Styles:</span>
+      <div class="presets" id="presetsBar">
+        <div class="toggle active" data-preset="vibrant">
+          <span class="preset-dot" style="background: linear-gradient(135deg, #9138e5, #ffcb57);"></span>
+          <span>Vibrant</span>
+        </div>
+        <div class="toggle" data-preset="rtechcyber">
+          <span class="preset-dot" style="background: linear-gradient(135deg, #00E5FF, #B323FF);"></span>
+          <span>rTechCoding</span>
+        </div>
+        <div class="toggle" data-preset="night">
+          <span class="preset-dot" style="background: linear-gradient(135deg, #142850, #00a8cc);"></span>
+          <span>Night</span>
+        </div>
+        <div class="toggle" data-preset="subtle">
+          <span class="preset-dot" style="background: linear-gradient(135deg, #374151, #2563eb);"></span>
+          <span>Subtle</span>
+        </div>
+        <div class="toggle" data-preset="smooth">
+          <span class="preset-dot" style="background: linear-gradient(135deg, #818cf8, #f472b6);"></span>
+          <span>Smooth</span>
+        </div>
+        <div class="toggle" data-preset="bubbles">
+          <span class="preset-dot" style="background: linear-gradient(135deg, #38bdf8, #f43f5e);"></span>
+          <span>Bubbles</span>
+        </div>
+        <div class="toggle" data-preset="professional">
+          <span class="preset-dot" style="background: linear-gradient(135deg, #1e3a8a, #0d9488);"></span>
+          <span>Professional</span>
+        </div>
+        <div class="toggle" data-preset="summer">
+          <span class="preset-dot" style="background: linear-gradient(135deg, #f43f5e, #fde047);"></span>
+          <span>Summer</span>
+        </div>
+        <div class="toggle" data-preset="parallax">
+          <span class="preset-dot" style="background: linear-gradient(135deg, #a855f7, #06b6d4);"></span>
+          <span>Parallax</span>
+        </div>
+        <div class="toggle" data-preset="universe">
+          <span class="preset-dot" style="background: linear-gradient(135deg, #4f46e5, #22d3ee);"></span>
+          <span>Universe</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3-Column Configuration Grid with Dedicated Control Cards -->
+    <div class="configure-wrap">
+      <div class="config">
+
+        <!-- Column 1: Particles, Size, Speed -->
+        <div class="control-card">
+          <div class="card-header">
+            <div class="card-icon-wrap icon-cyan">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <div class="card-header-text">
+              <h4>Particle Dynamics</h4>
+              <span class="card-desc">Volume, dimensions & speeds</span>
+            </div>
+          </div>
+          
+          <!-- Count -->
+          <div class="row">
+            <div class="label">
+              <span>Particle Count</span>
+              <span class="sub-info" id="valCount">6</span>
+            </div>
+            <div class="slider-wrap">
+              <input type="range" id="paramCount" min="1" max="40" step="1" value="6">
+            </div>
+          </div>
+
+          <!-- Size & Pulse -->
+          <div class="row divider-top">
+            <div class="label">
+              <span>Size & Pulsing</span>
+            </div>
+            
+            <div class="sub-label">
+              <span>Minimum Size</span>
+              <span class="sub-info" id="valSizeMin">1100 px</span>
+            </div>
+            <div class="slider-wrap">
+              <input type="range" id="paramSizeMin" min="20" max="2500" step="20" value="1100">
+            </div>
+
+            <div class="sub-label">
+              <span>Maximum Size</span>
+              <span class="sub-info" id="valSizeMax">1300 px</span>
+            </div>
+            <div class="slider-wrap">
+              <input type="range" id="paramSizeMax" min="20" max="2500" step="20" value="1300">
+            </div>
+
+            <div class="sub-label">
+              <span>Pulse Amplitude</span>
+              <span class="sub-info" id="valPulse">0.00</span>
+            </div>
+            <div class="slider-wrap">
+              <input type="range" id="paramPulse" min="0" max="1" step="0.05" value="0">
+            </div>
+          </div>
+
+          <!-- Speed -->
+          <div class="row divider-top">
+            <div class="label">
+              <span>Velocity Vectors</span>
+            </div>
+
+            <div class="sub-label">
+              <span>Speed X (Horizontal)</span>
+              <span class="sub-info" id="valSpeedX">0.10 - 0.30</span>
+            </div>
+            <div class="dual-range-track">
+              <input type="range" id="paramSpeedXMin" min="0" max="1.5" step="0.05" value="0.10">
+              <input type="range" id="paramSpeedXMax" min="0" max="2.0" step="0.05" value="0.30">
+            </div>
+
+            <div class="sub-label" style="margin-top: 10px;">
+              <span>Speed Y (Vertical)</span>
+              <span class="sub-info" id="valSpeedY">0.10 - 0.30</span>
+            </div>
+            <div class="dual-range-track">
+              <input type="range" id="paramSpeedYMin" min="0" max="1.5" step="0.05" value="0.10">
+              <input type="range" id="paramSpeedYMax" min="0" max="2.0" step="0.05" value="0.30">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Column 2: Colors & Shapes -->
+        <div class="control-card">
+          <div class="card-header">
+            <div class="card-icon-wrap icon-purple">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+            </div>
+            <div class="card-header-text">
+              <h4>Palette & Geometry</h4>
+              <span class="card-desc">Background, colors & shapes</span>
+            </div>
+          </div>
+
+          <!-- Colors -->
+          <div class="row">
+            <div class="color-title">
+              <span class="label" style="margin: 0;">Color Palette</span>
+              <button class="add" id="btnAddColor">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                <span>Add Color</span>
+              </button>
+            </div>
+
+            <div class="colors-wrap">
+              <!-- Background Swatch -->
+              <div class="swatch-row swatch-row-bg">
+                <div class="swatch">
+                  <div class="swatch-preview" id="bgSwatchPreview" style="background-color: #9138e5;">
+                    <input type="color" id="paramBgColor" value="#9138e5">
+                  </div>
+                  <input type="text" class="color-hex-text" id="paramBgColorText" value="#9138E5">
+                </div>
+                <span class="badge-bg-label">Background</span>
+              </div>
+
+              <!-- Particle Colors List -->
+              <div id="particleColorsList" class="colors-wrap">
+                <!-- Dynamically populated -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Shapes with SVG Icons -->
+          <div class="row divider-top">
+            <div class="label">
+              <span>Particle Shapes</span>
+            </div>
+            <div class="shapes-modern-grid" id="shapesGroup">
+              <div class="shape-toggle-card active" data-shape="c">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="9"/></svg>
+                <span class="shape-title">Circle</span>
+                <span class="shape-code">"c"</span>
+              </div>
+              <div class="shape-toggle-card" data-shape="s">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="18" height="18" rx="3"/></svg>
+                <span class="shape-title">Square</span>
+                <span class="shape-code">"s"</span>
+              </div>
+              <div class="shape-toggle-card" data-shape="t">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 22 20 2 20"/></svg>
+                <span class="shape-title">Triangle</span>
+                <span class="shape-code">"t"</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Column 3: Blending, Opacity, Skew -->
+        <div class="control-card">
+          <div class="card-header">
+            <div class="card-icon-wrap icon-blue">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 0 20v-20z"/></svg>
+            </div>
+            <div class="card-header-text">
+              <h4>Optics & Geometry</h4>
+              <span class="card-desc">Blend modes, glow & skew</span>
+            </div>
+          </div>
+
+          <!-- Blending Mode -->
+          <div class="row">
+            <div class="label">
+              <span>Layer Blending</span>
+            </div>
+            <div class="select-wrapper">
+              <select class="select-input" id="paramBlending">
+                <option value="overlay" selected>overlay (Stripe Glow)</option>
+                <option value="screen">screen (High Brightness)</option>
+                <option value="lighten">lighten (Ambient Tint)</option>
+                <option value="color-dodge">color-dodge (Cyber Glow)</option>
+                <option value="soft-light">soft-light (Delicate Contrast)</option>
+                <option value="hard-light">hard-light (Punchy)</option>
+                <option value="none">none (Solid source-over)</option>
+              </select>
+              <svg class="select-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+          </div>
+
+          <!-- Opacity -->
+          <div class="row divider-top">
+            <div class="label">
+              <span>Radial Opacity Falloff</span>
+            </div>
+
+            <div class="sub-label">
+              <span>Center Opacity</span>
+              <span class="sub-info" id="valOpacityCenter">1.00</span>
+            </div>
+            <div class="slider-wrap">
+              <input type="range" id="paramOpacityCenter" min="0" max="1" step="0.05" value="1.00">
+            </div>
+
+            <div class="sub-label">
+              <span>Edge Opacity</span>
+              <span class="sub-info" id="valOpacityEdge">0.10</span>
+            </div>
+            <div class="slider-wrap">
+              <input type="range" id="paramOpacityEdge" min="0" max="0.5" step="0.02" value="0.10">
+            </div>
+          </div>
+
+          <!-- Skew -->
+          <div class="row divider-top">
+            <div class="label">
+              <span>Header Skew Angle</span>
+              <span class="sub-info" id="valSkew">-2°</span>
+            </div>
+            <div class="slider-wrap">
+              <input type="range" id="paramSkew" min="-12" max="12" step="0.5" value="-2">
+            </div>
+
+            <div class="skew-quick-chips">
+              <button class="chip-btn" data-skew="0">0° Flat</button>
+              <button class="chip-btn active" data-skew="-2">-2° Standard</button>
+              <button class="chip-btn" data-skew="-4">-4° Stripe</button>
+              <button class="chip-btn" data-skew="3">+3° Inverted</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Quick Action Banner inside Content -->
+    <div class="studio-bottom-banner">
+      <div class="banner-badge-icon">🚀</div>
+      <div class="banner-text">
+        <h4>Ready to add this animated background to your website?</h4>
+        <p>Integrates with HTML, React, Next.js, and Vue in less than 30 seconds with zero bloated dependencies.</p>
+      </div>
+      <div class="banner-actions">
+        <button class="btn-action btn-how-to-use" onclick="document.getElementById('btnHowToUse').click()">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          <span>How to use</span>
+        </button>
+        <button class="btn-action btn-code btn-glow" onclick="document.getElementById('btnGetCode').click()">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          <span>Get Generated Code</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer center wide">
+      <p>rTechCoding Lab &copy; 2026. Made with ❤️ by <a href="https://rtechcoding.com" target="_blank" rel="noopener">rTechCoding</a>.</p>
+    </footer>
+
+  </main>
+
+  <!-- =========================================================================
+       3. "How to Use & All Code" POPUP MODAL (Opens on "How to use" or "Get Code")
+       ========================================================================= -->
+  <div class="modal-backdrop" id="howToUseModal">
+    <div class="modal-window modal-wide">
+      
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <div class="modal-badge-tag">Implementation Guide</div>
+          <h3>How to use Animated Background Headers</h3>
+        </div>
+        <button class="btn-close-modal" id="btnCloseModal" title="Close Popup">&times;</button>
+      </div>
+
+      <!-- Modal Body: Step by Step Guide & Code Sections -->
+      <div class="modal-body">
+        
+        <!-- Step 1 -->
+        <div class="modal-step">
+          <div class="step-num-badge">1</div>
+          <div class="step-details">
+            <h4>Add HTML container element</h4>
+            <p>Ensure your header container has a defined width and height, and add the <code>finisher-header</code> class.</p>
+            <div class="code-snippet-box">
+              <div class="code-snippet-header">
+                <span>HTML</span>
+                <button class="btn-copy-snippet" onclick="copySnippetText(this, 'step1Code')">Copy</button>
+              </div>
+              <pre class="hljs" id="step1Code"><code>&lt;<span class="hljs-tag">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"header finisher-header"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"width: 100%; height: 350px;"</span>&gt;
+  <span class="hljs-comment">&lt;!-- Your logo, navigation, or hero content --&gt;</span>
+&lt;/<span class="hljs-tag">div</span>&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="modal-step">
+          <div class="step-num-badge">2</div>
+          <div class="step-details">
+            <h4>Include the library script</h4>
+            <p>Download or link <code>rtechcoding-header.js</code> right before the closing <code>&lt;/body&gt;</code> tag.</p>
+            <div class="code-snippet-box">
+              <div class="code-snippet-header">
+                <span>HTML</span>
+                <button class="btn-copy-snippet" onclick="copySnippetText(this, 'step2Code')">Copy</button>
+              </div>
+              <pre class="hljs" id="step2Code"><code>&lt;<span class="hljs-tag">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"rtechcoding-header.js"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/javascript"</span>&gt;&lt;/<span class="hljs-tag">script</span>&gt;</code></pre>
+            </div>
+            <div style="margin-top: 10px;">
+              <a href="rtechcoding-header.js" download="rtechcoding-header.js" class="btn-download-script">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span>Download rtechcoding-header.js</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="modal-step">
+          <div class="step-num-badge">3</div>
+          <div class="step-details">
+            <h4>Run the script with your custom configuration</h4>
+            <p>Paste your current customized settings below. This live snippet updates automatically with all slider and color adjustments from the studio:</p>
+            <div class="code-snippet-box">
+              <div class="code-snippet-header">
+                <span>JAVASCRIPT</span>
+                <button class="btn-copy-snippet" id="btnCopyStep3">Copy Script</button>
+              </div>
+              <pre class="hljs" id="step3Code"><code></code></pre>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <button class="btn-action" id="btnCopyFullSnippet">
+          <span>📋</span> Copy Full HTML + JS
+        </button>
+        <button class="btn-action btn-code" id="btnModalCloseAction">Close</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="appToast">Code copied to clipboard!</div>
+
+  <!-- Scripts -->
+  <script src="rtechcoding-header.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
