@@ -23,4 +23,4 @@ An interactive studio controller and generator built by **rTechCoding** that all
 ## Quick Start
 
 1. Clone the repository:
-2. git clone [[https://github.com/your-username/animated-background-headers.git](https://github.com/rTechCoding/header-desings-ui-ux)
+2. git clone (https://github.com/rTechCoding/header-desings-ui-ux)
