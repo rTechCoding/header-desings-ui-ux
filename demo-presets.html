@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rTechCoding Header Presets Showcase</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #060914;
+      color: #F0F4FC;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      padding-bottom: 80px;
+    }
+
+    .top-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 32px;
+      background: rgba(9, 13, 31, 0.9);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(12px);
+    }
+
+    .brand {
+      font-size: 1.2rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #00E5FF, #2878FF, #B323FF);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-decoration: none;
+    }
+
+    .btn-back {
+      padding: 8px 18px;
+      border-radius: 9999px;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.85rem;
+      transition: background 0.2s;
+    }
+    .btn-back:hover { background: rgba(255, 255, 255, 0.2); }
+
+    .showcase-header {
+      text-align: center;
+      padding: 60px 20px 40px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .showcase-header h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .showcase-header p {
+      color: #94A3B8;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .presets-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 32px;
+    }
+
+    .preset-card-item {
+      background: #0B1024;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .preset-card-item:hover {
+      transform: translateY(-4px);
+      border-color: rgba(0, 229, 255, 0.4);
+    }
+
+    .preset-canvas-box {
+      width: 100%;
+      height: 240px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .preset-canvas-box h3 {
+      position: relative;
+      z-index: 2;
+      color: #FFFFFF;
+      font-size: 1.4rem;
+      font-weight: 800;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+    }
+
+    .preset-details {
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .preset-title-group h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .preset-tag {
+      font-size: 0.72rem;
+      color: #64748B;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-top: 2px;
+    }
+
+    .btn-apply {
+      padding: 8px 16px;
+      border-radius: 8px;
+      background: rgba(0, 229, 255, 0.12);
+      color: #00E5FF;
+      border: 1px solid rgba(0, 229, 255, 0.25);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 700;
+      transition: all 0.2s ease;
+    }
+    .btn-apply:hover {
+      background: #00E5FF;
+      color: #050918;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="top-nav">
+    <a href="index.html" class="brand">rTechCoding Lab</a>
+    <a href="index.html" class="btn-back">Open Interactive Studio &rarr;</a>
+  </nav>
+
+  <header class="showcase-header">
+    <h1>Preset Showcase Gallery</h1>
+    <p>Explore all 12 animated background presets generated with high-performance HTML5 Canvas rendering.</p>
+  </header>
+
+  <div class="presets-container" id="cardsGrid">
+    <!-- Rendered via JS -->
+  </div>
+
+  <script src="rtechcoding-header.js"></script>
+  <script>
+    var showcaseConfigs = [
+      {
+        id: "rtechcyber",
+        name: "rTechCoding Cyber",
+        type: "Flagship",
+        config: { count: 6, size: { min: 400, max: 700, pulse: 0.2 }, speed: { x: { min: 0.1, max: 0.3 }, y: { min: 0.1, max: 0.3 } }, colors: { background: "#050918", particles: ["#00E5FF", "#2878FF", "#B323FF", "#00FFA3"] }, blending: "screen", opacity: { center: 0.9, edge: 0.05 }, skew: 0, shapes: ["c"] }
+      },
+      {
+        id: "vibrant",
+        name: "Vibrant Classic",
+        type: "Finisher Original",
+        config: { count: 5, size: { min: 500, max: 800, pulse: 0 }, speed: { x: { min: 0.1, max: 0.3 }, y: { min: 0.1, max: 0.3 } }, colors: { background: "#9138e5", particles: ["#6bd6ff", "#ffcb57", "#ff333d"] }, blending: "overlay", opacity: { center: 1, edge: 0.1 }, skew: 0, shapes: ["c"] }
+      },
+      {
+        id: "night",
+        name: "Night Sky",
+        type: "Dark Theme",
+        config: { count: 6, size: { min: 400, max: 700, pulse: 0.1 }, speed: { x: { min: 0.1, max: 0.3 }, y: { min: 0.1, max: 0.3 } }, colors: { background: "#080c18", particles: ["#142850", "#27496d", "#0c7b93", "#00a8cc"] }, blending: "screen", opacity: { center: 0.8, edge: 0 }, skew: 0, shapes: ["c"] }
+      },
+      {
+        id: "bubbles",
+        name: "Bubbles Multi-Shape",
+        type: "Playful",
+        config: { count: 18, size: { min: 25, max: 65, pulse: 0.4 }, speed: { x: { min: 0.2, max: 0.7 }, y: { min: 0.3, max: 0.9 } }, colors: { background: "#0f172a", particles: ["#38bdf8", "#818cf8", "#34d399", "#f43f5e"] }, blending: "screen", opacity: { center: 0.85, edge: 0.15 }, skew: 0, shapes: ["c", "s", "t"] }
+      },
+      {
+        id: "summer",
+        name: "Summer Sunset",
+        type: "Warm Glow",
+        config: { count: 5, size: { min: 450, max: 750, pulse: 0.1 }, speed: { x: { min: 0.1, max: 0.3 }, y: { min: 0.1, max: 0.3 } }, colors: { background: "#4c0519", particles: ["#f43f5e", "#fb923c", "#fde047"] }, blending: "screen", opacity: { center: 0.9, edge: 0.1 }, skew: 0, shapes: ["c"] }
+      },
+      {
+        id: "aurora",
+        name: "Emerald Aurora",
+        type: "Nature",
+        config: { count: 5, size: { min: 400, max: 700, pulse: 0.15 }, speed: { x: { min: 0.1, max: 0.3 }, y: { min: 0.1, max: 0.3 } }, colors: { background: "#022c22", particles: ["#10b981", "#34d399", "#06b6d4", "#a7f3d0"] }, blending: "screen", opacity: { center: 0.75, edge: 0.1 }, skew: 0, shapes: ["c"] }
+      }
+    ];
+
+    var grid = document.getElementById('cardsGrid');
+
+    showcaseConfigs.forEach(function(item, idx) {
+      var card = document.createElement('div');
+      card.className = 'preset-card-item';
+      
+      var canvasBox = document.createElement('div');
+      canvasBox.className = 'preset-canvas-box';
+      canvasBox.id = 'canvas-box-' + idx;
+      canvasBox.innerHTML = '<h3>' + item.name + '</h3>';
+
+      var details = document.createElement('div');
+      details.className = 'preset-details';
+      details.innerHTML = 
+        '<div class="preset-title-group">' +
+          '<h4>' + item.name + '</h4>' +
+          '<span class="preset-tag">' + item.type + '</span>' +
+        '</div>' +
+        '<a href="index.html" class="btn-apply">Customize in Studio</a>';
+
+      card.appendChild(canvasBox);
+      card.appendChild(details);
+      grid.appendChild(card);
+
+      // Initialize individual header
+      var opts = Object.assign({}, item.config, { element: canvasBox });
+      new RTechCodingHeader(opts);
+    });
+  </script>
+</body>
+</html>
