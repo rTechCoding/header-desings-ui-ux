@@ -178,7 +178,7 @@ export default function HeroHeader() {
 
 ## 🏷️ Finisher Header Compatibility
 
-This package is completely compatible with code generated from `finisher.co/lab/header`:
+This package is completely compatible with code generated from `rtechcoding/header`:
 ```javascript
 // Existing FinisherHeader code continues to work seamlessly!
 new FinisherHeader({
