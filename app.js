@@ -1,5 +1,5 @@
 /**
- * rTechCoding Animated Background Headers - Lab Application Controller
+ * rTechCoding Animated Background Headers - Lab Application Controller rTechCoding
  * Replaces and extends finisher.co/lab/header
  */
 
